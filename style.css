@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=VT323&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Josefin+Sans", monospace;
+    color: rgb(209, 209, 209);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(59, 163, 233);
+    
+    gap: 48px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+}
+
+a.gameHover:hover{opacity: 0.3}
+
+a.header-links:hover{
+    background: rgb(109, 187, 240);
+}
+
+#home{
+    margin-top: 56px;
+    padding-top: 50px;
+    background-image: url('images/backgroundhome.jpg');
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    color: rgb(209, 209, 209);
+    font-size: 32px;
+    align-items: center;
+    gap: 48px;
+}
+
+
+.headshot {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+
+}
+
+.intro{
+    padding-top: 24px;
+    max-width: 400px;
+}
+
+#games, #about{
+    padding-top: 56px;
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 56px;
+}
+
+
+#resume{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 56px;
+    font-size: 24px;
+}
+
+.underline{align-self: center;}
+
+.sectiontitle{
+text-align: center;
+font-size: 56px;
+}
+
+.underline{
+    background-color: rgb(209, 209, 209);
+    width: 150px;
+    height: 5px;
+}
+
+.rps, .etchsketch {
+    border-radius: 50%;
+}
+
+.rps{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.etchsketch{
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+}
+
+.etchsketchcontent, .rpscontent{
+    text-align: center;
+}
+
+.game-icons{
+    display:flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.uci-logo{
+    padding-top: 32px;
+    background-color: transparent;
+    height: 200px;
+    width: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.about-text{
+    width: 500px;
+    text-indent: 20px;
+    font-size: 20px;
+}
+
+#about{
+    gap: 48px;
+}
+
+p{
+    margin: 5px;
+}
+
+.up-arrow{
+    width: 50px;
+    height: 50px;
+}
+
+
+.resume-content{
+    display:flex;
+    justify-content: space-around;
+}
+
+.resume-box{
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.resume-png{
+    width: 50px;
+    height: 50px;
+    object-fit:cover;
+}
+
+.front-end-png{
+    width: 350px;
+    height: auto;
+    object-fit:cover;
+}
+
+.resume-logos{
+    display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+    width: 400px;
+    gap: 24px;
+}
+
+button{
+    background-color: rgb(59, 163, 233);
+    color: #f9faf8;
+    font-weight: bold;
+    padding: 8px 35px 8px 35px;  
+    border-radius:10px;
+    border-width: 3px;
+    border-color: rgb(59, 163, 233);
+    cursor:pointer;
+}
+
+button:hover{opacity: 0.3}
+
+footer{
+    text-align: center;
+    padding: 24px;
+    background-image: url('images/backgroundhome.jpg');
+}
