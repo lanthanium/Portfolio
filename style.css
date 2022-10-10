@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=VT323&display=swap');
 
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -8,24 +9,152 @@ html{
 body {
     margin: 0;
     padding: 0;
-    font-family:"Josefin+Sans", monospace;
+    font-family:"Josefin+Sans", monospace, sans-serif;
     color: rgb(209, 209, 209);
+    background-image: url('images/backgroundGame.jpg');
+    background-repeat: repeat;
+    background-size: 700vh;
 }
 
+.name{
+    font-size: 8vh;
+    padding-top: 10.0vh;
+}
+
+.intro{
+    font-size: 3vw;
+    padding: 2vh 0;
+    padding-bottom: -5vh;
+}
+
+.about-text{
+    text-align:center;
+    font-size: 2.35vh;
+    max-width: 70vw;
+    color: yellow;
+}
+
+.subtitle{
+    font-size: 3vw;
+    padding: 1vh 0;
+}
+
+#home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    font-size: 2.0vh;
+    gap: 3vh;
+    color: rgb(209, 209, 209);
+
+    padding-bottom: 4vh;
+}
+
+.rps, .etchsketch {
+    border-radius: 50%;
+}
+
+
+#games, #about{
+    padding-top: 5vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+#about{
+    padding-bottom: 3vh;
+}
+
+.underline{
+    background-color: rgb(209, 209, 209);
+    width: 20vw;
+    height: .1vh;
+}
+
+    #resume{
+    padding-top: 4vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    }
+
+    .resume-content{
+        padding: 4vh 0;
+        
+    }
+
+    .resume-box{
+        padding: 4vh 0;
+    }
+
+    img.resume-png {
+        width: 5vh;
+        height: auto;
+        object-fit: cover;
+    }
+
+    img.front-end-png {
+        width: 20vh;
+        height: auto;
+        object-fit: cover;
+    }
+
+    button{
+        margin-top: 2vh;
+        background-color: rgb(59, 163, 233);
+        color: #f9faf8;
+        font-weight: bold;
+        padding: 1vh 3vh; 
+        border-radius:10px;
+        border-width: 3px;
+        border-color: rgb(59, 163, 233);
+        cursor:pointer;
+    }
+
+a.gameHover:hover{opacity: 0.3}
+a.up-button:hover{opacity: 0.3}
+a.header-links:hover{
+    background: rgb(109, 187, 240);
+}
+
+.sectiontitle{
+    text-align: center;
+    font-size: 5vh;
+}
+
+.up-arrow{
+    width: 6vw;
+    height: 6vw;
+}
+
+@media only screen and (min-width: 690px) {
+
 .header {
+    
     display: flex;
     justify-content: center;
     background-color: rgb(59, 163, 233);
-    
-    gap: 48px;
+    gap: 5vh;
     text-decoration: none;
     color: white;
-    font-size: 24px;
+    font-size: 2vw;
     margin: 0;
     position: fixed;
     top: 0;
     width: 100%;
 }
+
+.name{
+    font-size: 15vh;
+    padding-top: 10.0vh;
+}
+
 
 a {
     text-decoration: none;
@@ -34,25 +163,8 @@ a {
     padding: 16px;
 }
 
-a.gameHover:hover{opacity: 0.3}
-
-a.header-links:hover{
-    background: rgb(109, 187, 240);
-}
-
 #home{
-    margin-top: 56px;
-    padding-top: 50px;
-    background-image: url('images/backgroundhome.jpg');
-    background-repeat: no-repeat;
-    background-size: 2000px;
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-    color: rgb(209, 209, 209);
-    font-size: 32px;
-    align-items: center;
-    gap: 48px;
+    padding-top: 10vh;
 }
 
 
@@ -60,49 +172,25 @@ a.header-links:hover{
     height: 200px;
     width: auto;
     border-radius: 50%;
-
 }
 
 .intro{
-    padding-top: 24px;
-    max-width: 400px;
+    font-size: 2.25vw;
+    padding: 2vh 0;
+    padding-bottom: -5vh;
 }
 
 #games, #about{
-    padding-top: 56px;
-    background-color: black;
+    padding-top: 10vh;
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
-    padding-bottom: 56px;
+    gap: 5vh;
 }
 
-
-#resume{
-    background-color: black;
-    display:flex;
-    flex-direction: column;
-    gap: 32px;
-    padding-bottom: 56px;
-    font-size: 24px;
-}
-
-.underline{align-self: center;}
 
 .sectiontitle{
-text-align: center;
-font-size: 56px;
-}
-
-.underline{
-    background-color: rgb(209, 209, 209);
-    width: 150px;
-    height: 5px;
-}
-
-.rps, .etchsketch {
-    border-radius: 50%;
+font-size: 7.5vh;
 }
 
 .rps{
@@ -151,54 +239,10 @@ p{
 }
 
 .up-arrow{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
-
-.resume-content{
-    display:flex;
-    justify-content: space-around;
-}
-
-.resume-box{
-    display:flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    width: 400px;
-}
-
-.resume-png{
-    width: 50px;
-    height: 50px;
-    object-fit:cover;
-}
-
-.front-end-png{
-    width: 350px;
-    height: auto;
-    object-fit:cover;
-}
-
-.resume-logos{
-    display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-    width: 400px;
-    gap: 24px;
-}
-
-button{
-    background-color: rgb(59, 163, 233);
-    color: #f9faf8;
-    font-weight: bold;
-    padding: 8px 35px 8px 35px;  
-    border-radius:10px;
-    border-width: 3px;
-    border-color: rgb(59, 163, 233);
-    cursor:pointer;
-}
 
 button:hover{opacity: 0.3}
 
@@ -207,3 +251,182 @@ footer{
     padding: 24px;
     background-image: url('images/backgroundhome.jpg');
 }
+}
+
+
+/*Tablet Devices: Up to 690 px*/
+@media only screen and (min-width: 481px) and (max-width: 690px) {
+    .header {
+    
+        display: flex;
+        justify-content: center;
+        background-color: rgb(59, 163, 233);
+        gap: 5vh;
+        text-decoration: none;
+        color: white;
+        font-size: 2vw;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .header-links{
+        background-color: rgb(59, 163, 233);
+        padding: 1.5vh;
+        font-weight:bold;
+        text-align: center;
+        font-size: 2.5vh;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer; 
+    }
+
+    .headshot{
+        max-width: 15vh;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .rps, .etchsketch{
+        width: 15vw;
+        height: 15vw;
+        object-fit: cover;
+    }
+    
+    .uci-logo{
+
+        width: 20vw;
+        height: auto;
+    }
+
+
+    #home{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align:center;
+        font-size: 2.0vh;
+        gap: 3vh;
+        color: rgb(209, 209, 209);
+        padding-bottom: 4vh;
+    }
+
+    p{
+        margin:0;
+        text-align: center;
+    }
+
+    .game-paragraph{
+        font-size: 2.25vh;
+        max-width: 70vw;
+        text-align: center;
+    }
+
+    .etchsketchcontent, .rpscontent{
+        text-align: center;
+    }
+
+    .game-icons{
+        display:flex;
+        flex-direction: column;
+        gap: 4vw;
+        font-size: 2vh;
+    }
+
+    
+    button:hover{opacity: 0.3}
+    
+    footer{
+        text-align: center;
+        padding: 2vh;
+        background-image: url('images/backgroundhome.jpg');
+    }
+}
+
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 480px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .header-links{
+        background-color: rgb(59, 163, 233);
+        padding: 1.5vh;
+        font-weight:bold;
+        text-align: center;
+        font-size: 2.5vh;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        
+    }
+
+    .headshot{
+        max-width: 15vh;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .rps, .etchsketch{
+        width: 15vw;
+        height: 15vw;
+        object-fit: cover;
+    }
+    
+    .uci-logo{
+
+        width: 20vw;
+        height: auto;
+    }
+
+    p{
+        margin:0;
+        text-align: center;
+    }
+
+    .game-paragraph{
+        font-size: 2.25vh;
+        max-width: 70vw;
+        text-align: center;
+    }
+
+    .etchsketchcontent, .rpscontent{
+        text-align: center;
+    }
+
+    .game-icons{
+        display:flex;
+        flex-direction: column;
+        gap: 4vw;
+        font-size: 2vh;
+    }
+
+    .about-text{
+        text-align:center;
+        font-size: 2.35vh;
+        max-width: 70vw;
+        color: yellow;
+    }
+
+    
+    
+    button:hover{opacity: 0.3}
+    
+    footer{
+        text-align: center;
+        padding: 2vh;
+        background-image: url('images/backgroundhome.jpg');
+    }
+}
+

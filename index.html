@@ -20,60 +20,62 @@ EMAIL: ldngo@uci.edu
    <!-- 
   <p>
    <a href="http://validator.w3.org/check?uri=referer">
+    https://lanthanium.github.io/Portfolio/
        W3C validator
     </a>
   </p> -->
   
-    <div class = "header">
-      <a class = "header-links" href = "#home">Home</a>
-      <a class = "header-links" href = "#games">Games</a>
-      <a class = "header-links" href = "#about">About</a>
-      <a class = "header-links" href = "#resume">Resume</a>
-    </div>
+  <div class = "header">
+    <a class = "header-links" href = "#home">Home</a>
+    <a class = "header-links" href = "#games">Games</a>
+    <a class = "header-links" href = "#about">About</a>
+    <a class = "header-links" href = "#resume">Resume</a>
+  </div>
   
-
   <div id="home">
-    <div class = "name" style="font-size: 72px; font-weight:lighter;">Lan Ngo</div>
-    <div class = "subtitle">Student Software Engineer and Aspiring Web Developer</div>
+    <div class = "name">Lan Ngo</div>
+    <div class = "subtitle" style="max-width: 75vw">Student Software Engineer and Aspiring Web Developer</div>
     <img class = "headshot" src = "images/headshot.jpg" alt = "a picture of my face">
-    <div class = "intro" style = "font-size: 24px;">"Programming is 10% writing code and 90% understanding why it's not working" </div>
+    <div class = "intro" style="max-width: 30vw">"Programming is 10% writing code and 90% understanding why it's not working" </div>
   </div>
 
-  <div id="games">
-    <div class = "sectiontitle">GAMES</div>
-    <div class = "underline"></div>
-    <p>Popular and simple games I've made that can be played in your web browser</p>
+  <div id = "sharebackground">
+    <div id="games">
+      <div class = "sectiontitle">GAMES</div>
+      <div class = "underline"></div>
+      <div class = "game-paragraph">Popular yet simple games that can be played in your web browser</div>
 
-    <div class = "game-icons">
+      <div class = "game-icons">
+        <div class = "rpscontent">
+          <a class = "gameHover" href = "https://lanthanium.github.io/RockPaperScissors/" >        
+            <img class = "rps" src = "images/rockpaperscissorsicon.PNG" alt = "rock-paper-scissors-icon"></a>
+          <p>Rock Paper Scissors</p>
+        </div>
 
-      <div class = "rpscontent">
-        <a class = "gameHover" href = "https://lanthanium.github.io/RockPaperScissors/" >        
-          <img class = "rps" src = "images/rockpaperscissorsicon.PNG" alt = "rock-paper-scissors-icon"></a>
-        <p>Rock Paper Scissors</p>
+        <div class = "etchsketchcontent">
+          <a class = "gameHover" href = "https://lanthanium.github.io/Etch-A-Sketch/">
+          <img class = "etchsketch" src = "images/original-7029954-1.jpg" alt = "etch-a-sketch-icon"></a>
+          <p>Etch a Sketch</p>
+        </div>
       </div>
+    </div>
 
-      <div class = "etchsketchcontent">
-        <a class = "gameHover" href = "https://lanthanium.github.io/Etch-A-Sketch/">
-        <img class = "etchsketch" src = "images/original-7029954-1.jpg" alt = "etch-a-sketch-icon"></a>
-        <p>Etch a Sketch</p>
-      </div>
+    <div id="about">
+      <div class = "sectiontitle" >ABOUT</div>
+      <div class = "underline"></div>
+
+      <img class = "uci-logo" src = "images/UCI_Anteaters_logo.png" alt = "UC Irvine Logo">
+      <div class = "about-text">  Hello, I am a junior majoring in Software Engineering at the University of California, Irvine.  I am passionate about web development
+        and want to learn more about creating interactive applications that focus on great user experiences.  I am currently familiar with CSS, 
+        HTML, Javascript (ES6), C++ and Java. <br><br> Constantly seeking opportunites to learn new concepts and technologies and of course, improve on existing ones.
+        I eventually want to become a full time Full-Stack developer but in the meantime, am very excited to join a team as an intern.  <br><br> 
+        Outside of programming, I'm an avid basketball fan, cat connoisseur and a fitness trainer.  Whether you want helpful fitness tips 
+        or to engage in basketball debates, let's connect!  </div>
 
     </div>
-  </div>
-
-  <div id="about">
-    <div class = "sectiontitle" >ABOUT</div>
-    <div class = "underline"></div>
-
-    <img class = "uci-logo" src = "images/UCI_Anteaters_logo.png" alt = "UC Irvine Logo">
-    <p class = "about-text">  Hello, I am a junior majoring in Software Engineering at the University of California, Irvine.  I am passionate about web development
-      and want to learn more about creating interactive applications that focus on great user experiences.  I am currently familiar with CSS, 
-      HTML, Javascript (ES6), C++ and Java. <br><br> Constantly seeking opportunites to learn new concepts and technologies and of course, improve on existing ones.
-      I eventually want to become a full time Full-Stack developer but in the meantime, am very excited to join a team as an intern.  <br><br> 
-      Outside of programming, I'm an avid basketball fan, cat connoisseur and a fitness trainer.  Whether you want helpful fitness tips 
-      or to engage in basketball debates, let's connect!  </p>
 
   </div>
+
 
   <div id="resume">
     <div class = "sectiontitle" >RESUME</div>
@@ -81,14 +83,18 @@ EMAIL: ldngo@uci.edu
     <div class = "resume-content">
       <div class = "resume-box">
         <div>Say Hi!</div>
-        <div>Feel free to reach out to me if you had any questions or want to share ideas! Currently open to new opportunities.</div>
+        <div style="max-width: 75vw">Feel free to reach out to me if you had any questions or want to share ideas! Currently open to new opportunities.</div>
         <button>View Resume</button>
       </div>
       <div class = "resume-logos">
         
-        <img class = "resume-png" src= "images/GitHub-Mark.png" alt = "githublogo"> 
-        <img class = "resume-png" src="images/linkedinlogo.png" alt = "linkedin-logo">
-        <img class = "resume-png" src="images/Cplusplus.png" alt = "C++ logo">
+        <div class = "resume-png-group">     
+        
+          <img class = "resume-png" src= "images/GitHub-Mark.png" alt = "githublogo"> 
+          <img class = "resume-png" src="images/linkedinlogo.png" alt = "linkedin-logo">
+          <img class = "resume-png" src="images/Cplusplus.png" alt = "C++ logo">
+        </div>
+
         <img class = "front-end-png" src="images/html_css_js.png" alt = "front end logos">
       </div>
     </div>
