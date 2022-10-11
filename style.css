@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=VT323&display=swap');
 
 
-
 html{
     scroll-behavior: smooth;
+}
+
+h1{
+    margin-top: 0;
+    top: 0;
 }
 
 body {
@@ -259,7 +263,7 @@ footer{
     
         display: flex;
         justify-content: center;
-        background-color: rgb(59, 163, 233);
+        background-color: rgb(41, 90, 121);
         gap: 5vh;
         text-decoration: none;
         color: white;
@@ -357,7 +361,7 @@ footer{
     }
 
     .header-links{
-        background-color: rgb(59, 163, 233);
+        background-color: rgb(41, 90, 121);
         padding: 1.5vh;
         font-weight:bold;
         text-align: center;
