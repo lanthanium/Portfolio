@@ -143,7 +143,7 @@ a.header-links:hover{
     
     display: flex;
     justify-content: center;
-    background-color: rgb(84, 52, 105);
+    background-color: rgb(27, 178, 216);
     gap: 5vh;
     text-decoration: none;
     color: white;
@@ -264,7 +264,7 @@ footer{
     
         display: flex;
         justify-content: center;
-        background-color: rgb(84, 52, 105);
+        background-color: rgb(27, 178, 216);
         gap: 5vh;
         text-decoration: none;
         color: white;
@@ -362,7 +362,7 @@ footer{
     }
 
     .header-links{
-        background-color: rgb(84, 52, 105);
+        background-color: rgb(27, 178, 216);
         padding: 1.5vh;
         font-weight:bold;
         text-align: center;
